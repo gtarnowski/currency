@@ -1,0 +1,44 @@
+@import '../../styles/colors';
+
+.navbar {
+  height: 90px;
+  background-color: @background;
+  margin-bottom: 3rem;
+
+  .navbar-container {
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    padding: 0.5rem 0.75rem;
+    i {
+      font-size: 3em !important;
+    }
+  }
+
+  .navbar-menu {
+    height: 100%;
+    align-items: stretch;
+    display: flex;
+
+    .navbar-item {
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      padding: 0.5rem 0.75rem;
+      font-size: 1.2em;
+      color: #000;
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      &:hover, &.active {
+        background-color: #eaeaea;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "currency-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "clone": "^2.1.2",
+    "currency-codes": "^1.5.0",
+    "currency-flags": "git+https://github.com/transferwise/currency-flags.git",
+    "git": "^0.1.5",
+    "immutable": "^4.0.0-rc.12",
+    "less": "^3.9.0",
+    "lodash": "^4.17.11",
+    "mathjs": "^5.10.0",
+    "moment": "^2.24.0",
+    "node-less-chokidar": "^0.4.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-datepicker": "^2.5.0",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "react-semantic-ui-datepickers": "0.0.0-semantically-released",
+    "recharts": "^1.5.0",
+    "redux": "^4.0.1",
+    "redux-act": "^1.7.4",
+    "redux-saga": "^1.0.2",
+    "reselect": "^4.0.0",
+    "reset-css": "^4.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.1"
+  },
+  "scripts": {
+    "build-css": "node-less-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-less-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "flow": "flow"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "flow-bin": "^0.98.1",
+    "flow-remove-types": "^1.2.3",
+    "less-loader": "^5.0.0"
+  }
+}

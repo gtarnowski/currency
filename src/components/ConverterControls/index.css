@@ -1,0 +1,11 @@
+.converter-controls {
+  max-width: 800px;
+  grid-column-gap: 20px;
+  margin: 0px auto;
+}
+.converter-controls .converter-wrapper {
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+}

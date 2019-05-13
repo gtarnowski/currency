@@ -1,0 +1,38 @@
+.navbar {
+  height: 90px;
+  background-color: #f5f5f5;
+  margin-bottom: 3rem;
+}
+.navbar .navbar-container {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+}
+.navbar .navbar-brand {
+  padding: 0.5rem 0.75rem;
+}
+.navbar .navbar-brand i {
+  font-size: 3em !important;
+}
+.navbar .navbar-menu {
+  height: 100%;
+  align-items: stretch;
+  display: flex;
+}
+.navbar .navbar-menu .navbar-item {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.2em;
+  color: #000;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.navbar .navbar-menu .navbar-item:hover,
+.navbar .navbar-menu .navbar-item.active {
+  background-color: #eaeaea;
+}
