@@ -1,11 +1,11 @@
-import React from 'react'
+  import React from 'react'
 import { Icon, List, Message } from 'semantic-ui-react'
 import './index.css'
 
-const ConverterResults = ({ convertResult, amount }) => (
+const ConverterResults = ({ convertResult }) => (
   <div className="converter-results">
     <div className="converter-wrapper">
-      {convertResult.map(({ rate, result, from, to }) => (
+      {convertResult.map(({ rate, result, from, to, amount }) => (
         <Message key={rate}>
           <List size="huge" verticalAlign="middle">
             <List.Item>
