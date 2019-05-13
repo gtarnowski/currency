@@ -1,10 +1,9 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 import options from '../../lib/currency'
 import { Dropdown } from 'semantic-ui-react'
 
 const CurrencyDropDown = ({
   onChange,
-  defaultValue,
   multiple,
   placeholder,
   selection,

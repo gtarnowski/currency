@@ -9,3 +9,10 @@ html, body, #root, .app {
 *:not(i) {
   font-family: 'Ubuntu', sans-serif !important;
 }
+
+.default-search {
+  cursor: pointer;
+  color: dodgerblue;
+  font-weight: 600;
+  font-size: 1.1rem;
+}

@@ -34,16 +34,21 @@ const CompareControls = ({
   return (
     <div className="compare-controls">
       <Header as="h1">Compare </Header>
-      <a href="#" onClick={onDefaultSearch}>
+      <div className="default-search" onClick={onDefaultSearch}>
         <small>Default search</small>
-      </a>
+      </div>
       <div className="compare-wrapper">
         <SemanticDatepicker
-          onDateChange={date => onChangeStartDate(defaultFormat(date))}
+          onDateChange={date => {
+            console.log(date)
+            onChangeStartDate(defaultFormat(date))
+          }}
           selected={startDate}
         />
         <SemanticDatepicker
-          onDateChange={date => onChangeEndDate(defaultFormat(date))}
+          onDateChange={date => {
+            onChangeEndDate(defaultFormat(date))
+          }}
           selected={endDate}
         />
         <CurrencyDropDown

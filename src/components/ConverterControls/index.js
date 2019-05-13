@@ -33,9 +33,9 @@ const ConverterControls = ({
   return (
     <div className="converter-controls">
       <Header as="h1">Convert</Header>
-      <a href="#" onClick={onDefaultSearch}>
+      <div className="default-search" onClick={onDefaultSearch}>
         <small>Default search</small>
-      </a>
+      </div>
       <div className="converter-wrapper">
         <Input
           placeholder="Select Amount"
